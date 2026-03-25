@@ -1,15 +1,24 @@
-# Auto-Doc AI 🤖
+# SlateDoc: Secure AI Documentation Engine
 
-A professional AI-powered tool that parses Python source code and automatically generates technical documentation using Google Gemini 1.5 Flash.
+SlateDoc is a minimalist, high-performance tool built to automate technical documentation for Python projects using **Gemini 1.5 Flash**.
 
-## ✨ Features
-- **AST Parsing**: Uses Python's Abstract Syntax Tree to identify functions safely.
-- **Modular Architecture**: Separated Logic (src/) from UI (main.py).
-- **Streamlit UI**: Clean, web-based interface for file uploads and markdown previews.
-- **Secure**: Uses `.env` for API key management.
+## 🛡️ Engineering Highlights (Mid-Level Patterns)
+- **Security-First Architecture**: Features a pre-processing layer that masks PII and secrets (API keys/passwords) before data transmission to the LLM.
+- **AST Structural Analysis**: Uses Python's `ast` module for robust function extraction, ensuring accuracy that regular expressions cannot provide.
+- **Resilient AI Orchestration**: Implemented dynamic model discovery and fallback logic to handle API versioning (v1/v1beta) and service availability.
+- **Resource Auditing**: Built-in token tracking to monitor and audit cloud compute costs per session.
 
-## 🛠️ Setup
-1. Clone this folder.
-2. Create a `.env` file and add your `GOOGLE_API_KEY`.
-3. Install dependencies: `pip install -r requirements.txt`
-4. Run the app: `streamlit run main.py`
+## 🎨 Design Philosophy
+The UI is built with a "Cool Slate" aesthetic, focusing on a distraction-free environment with muted tones to reduce cognitive load during technical reviews.
+
+## 🛠️ Tech Stack
+- **Language**: Python 3.12
+- **LLM**: Google Gemini 1.5 Flash
+- **Interface**: Streamlit (Custom CSS)
+- **Parsing**: Abstract Syntax Trees (AST)
+
+## 🚀 Setup
+1. Clone the repo: `git clone https://github.com/YOUR_USERNAME/SlateDoc.git`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Add your `GOOGLE_API_KEY` to a `.env` file.
+4. Run: `streamlit run main.py`
