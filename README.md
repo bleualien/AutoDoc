@@ -1,4 +1,4 @@
-# Proshore Auto-Doc AI 🤖
+# Auto-Doc AI 🤖
 
 A professional AI-powered tool that parses Python source code and automatically generates technical documentation using Google Gemini 1.5 Flash.
 
